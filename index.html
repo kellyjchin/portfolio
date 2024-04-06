@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Kelly Chin - Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+  rel="stylesheet"
+/>
+
+
+<nav id="navbar" class="nav">
+  <ul class="nav-list">
+    <li>
+      <a href="#projects">Projects</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+    <li>
+      <a href="Resume_Kelly Chin_Updated_July_2021.pdf" target="_blank">Resume</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- START WELCOME SECTION -->
+<!-- TODO: Turn into a callout -->
+<section id="welcome-section" class="welcome-section">
+  <img src="default2.jpg" alt="portrait" id="portrait">
+  <h1>Hey, I'm Kelly!</h1>
+  <p>I'm a Junior Web Developer!</p>
+</section>
+
+<!-- START PROJECTS SECTION -->
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header">Cool projects I've worked on</h2>
+  <div class="projects-grid">
+
+    <div class="grid-item">
+      <a href="#" class="project project-tile" id="battleship">
+        <img class="project-image" src="battleship.PNG" alt="IT Job Fair Logo for NSCC"/>
+        <p class="project-title">Battleship</p>
+        <p class="tooltip"> A simplified, browser-based clone of the once popular video game, Battleship.  <span class="learn-more">Click to learn more.</span> </p>
+      </a>
+      <dialog>
+        <p> A simplified, browser-based clone of the once popular video game, Battleship. </p>
+        <a  href="https://battleshipv1-kellychin.netlify.app/" target="_blank" class="clickme">View Project</a>
+      </dialog>
+    </div>
+
+    <div class="grid-item">
+      <a href="#" class="project project-tile" id="nscc-chat">
+        <img class="project-image" src="nscc-chat.PNG" alt="IT Job Fair Logo for NSCC"/>
+        <p class="project-title">NSCC Chat</p>
+        <p class="tooltip">
+          A chat app clone, like Slack with CRUD and authentication functionality. <span class="learn-more">Click to learn more.</span>
+        </p>
+      </a>
+      <dialog>
+        <p>A chat app clone, like Slack with CRUD and authentication functionality. 
+        </p>
+        <a href="https://nscc-chat.web.app/" target="_blank" class="clickme">View Project</a>
+      </dialog>
+    </div>
+
+    <div class="grid-item">
+      <a href="#" class="project project-tile" id="nscc-job-fair">
+        <img class="project-image" src="itjobfair.PNG" alt="IT Job Fair Logo for NSCC"/>
+        <p class="project-title">NSCC IT Job Fair</p>
+        <p class="tooltip">
+          A website serving as an
+          advertisement for the NSCC IT Job Fair with CRUD functionality for registering students and
+          businesses. Techstack includes Laravel, CSS and vanilla Javascript. <span class="learn-more">Click to learn more.</span>
+        </p>
+      </a>
+      <dialog>
+        <p>A website serving as an
+          advertisement for the NSCC IT Job Fair with CRUD functionality for registering students and
+          businesses. Techstack includes Laravel, CSS and vanilla Javascript.
+        </p>
+        <a href="https://itjobfair.ca/" target="_blank" class="clickme">View Project</a>
+      </dialog>
+    </div>
+  </div>
+</section>
+<!-- END PROJECTS SECTION -->
+
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Shoot me an email!</h2>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:kellyjchin@outlook.com" class="btn contact-details">kellyjchin@outlook.com</a>
+    </div>
+  </section>
+  <script src="/script.js"></script>
+</body>
+</html>
