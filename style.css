@@ -424,7 +424,7 @@ dialog[open] {
   max-width: 1080px;
   background-color: var(--main-red);
   margin: 0 auto;
-  top: 25%;
+  top: 20%;
   display: flex;
 }
 
