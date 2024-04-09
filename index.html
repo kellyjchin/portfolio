@@ -39,7 +39,7 @@
 
 <!-- TODO: Turn into a callout -->
 <section id="welcome-section" class="welcome-section">
-  <img src="default2.jpg" alt="portrait" id="portrait">
+  <img src="default2.jpg" alt="portrait" id="portrait" loading="lazy">
   <div class="welcome-text">
     <h1>Hey, I'm Kelly!</h1>
     <p class="subtitle">I'm a Web Developer!</p>
@@ -56,19 +56,42 @@
 
     <div class="grid-item">
       <a href="#" class="project project-tile" id="battleship">
-        <img class="project-image" src="battleship.PNG" alt="IT Job Fair Logo for NSCC"/>
-        <p class="project-title">Battleship</p>
+        <img loading="lazy" class="project-image" src="battleship.PNG" alt="Battleship Screenshot"/>
+        <p class="project-title">Battleship 1.0</p>
         <p class="tooltip"> A simplified, browser-based clone of the once popular video game, Battleship.  <span class="learn-more">Click to learn more.</span> </p>
       </a>
       <dialog>
-        <p> A simplified, browser-based clone of the once popular video game, Battleship. </p>
-        <a  href="https://battleshipv1-kellychin.netlify.app/" target="_blank" class="clickme">View Project</a>
+        <img loading="lazy" class="project-image" src="battleship.PNG" alt="Battleship Screenshot"/>
+        <div class="text-wrapper">
+          <button class="close-btn">X</button>
+          <div class="text-content">
+            <h2>Battleship 1.0</h2>
+            <p> Uses Vanilla Javascript for:</p> 
+            <ul>
+              <li>creating the gameboard</li>
+              <li>detecting hits</li>
+              <li>determining win/loss states</li>
+              <li>determining layout of battleships on the grid</li>
+            </ul>
+            <p class="subtitle">Role</p>
+            <p>Sole Developer - Personal School Project </p>
+            <p class="subtitle">Tech Stack:</p>
+            <ul>
+              <li> HTML </li>
+              <li> CSS </li>
+              <li> Javascript </li>
+            </ul>
+            <a  href="https://battleshipv1-kellychin.netlify.app/" target="_blank" class="clickme">Play Battleship 1.0!</a>
+          </div>
+          
+        </div>
+      
       </dialog>
     </div>
 
     <div class="grid-item">
       <a href="#" class="project project-tile" id="nscc-chat">
-        <img class="project-image" src="nscc-chat.PNG" alt="IT Job Fair Logo for NSCC"/>
+        <img class="project-image" src="nscc-chat.PNG" alt="NSCC Chat screenshot" loading="lazy"/>
         <p class="project-title">NSCC Chat</p>
         <p class="tooltip">
           A chat app clone, like Slack with CRUD and authentication functionality. <span class="learn-more">Click to learn more.</span>
@@ -83,7 +106,7 @@
 
     <div class="grid-item">
       <a href="#" class="project project-tile" id="nscc-job-fair">
-        <img class="project-image" src="itjobfair.PNG" alt="IT Job Fair Logo for NSCC"/>
+        <img loading="lazy" class="project-image" src="itjobfair.PNG" alt="IT Job Fair Logo for NSCC"/>
         <p class="project-title">NSCC IT Job Fair</p>
         <p class="tooltip">
           A website serving as an
