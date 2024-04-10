@@ -83,9 +83,18 @@ body {
 
 
 /* THEME SWITCHER TBD */
-body.dark-theme * {
+body.dark * {
   background: #3a3d40 !important;
   color: white !important;
+}
+
+body.light * {
+  background-color: var(--main-white) !important;
+  color: #3a3d40 !important;
+}
+
+body.light .welcome-section{
+  background-image: unset;
 }
 
 h1,
@@ -130,8 +139,18 @@ img {
   z-index: 10;
 }
 
-.theme-switcher {
+.theme-switch-wrapper {
   margin-left: 20px;
+}
+
+.theme-switch-wrapper label {
+  display: block;
+}
+
+.theme-switcher {
+  width: 100px;
+  height: 25px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .nav-list {
@@ -301,9 +320,9 @@ img {
   font-size: 1.5rem;
   padding: 2rem 0.5rem;
   background-color: var(--main-gray);
-  border-left: solid thin white;
-  border-right: solid thin white;
-  border-bottom: solid thin white;
+  border-left: solid thin var(--main-gray);
+  border-right: solid thin var(--main-gray);
+  border-bottom: solid thin var(--main-gray);
 }
 
 .btn {

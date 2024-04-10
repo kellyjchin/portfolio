@@ -24,11 +24,14 @@
 
 
 <nav id="navbar" class="nav">
-  <select class="theme-switcher">
-    <option class="theme" data-value="default">Default</option>
-    <option class="theme" data-value="dark">Dark</option>
-    <option class="theme" data-value="light">Light</option>
-  </select>
+  <div class="theme-switch-wrapper">
+    <label for="theme-switcher">Theme:</label>
+    <select class="theme-switcher" id="theme-switcher">
+      <option class="theme" value="">Default</option>
+      <option class="theme" value="dark">Dark</option>
+      <option class="theme" value="light">Light</option>
+    </select>
+  </div>
   <ul class="nav-list">
     <li>
       <a href="#projects">Projects</a>
