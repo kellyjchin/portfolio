@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', e => {
     }
 })
 
-
 themeSwitcher.addEventListener('change', e => {
     let selectedTheme = themeSwitcher.value;
     let bodyTag = document.querySelector('body');
@@ -46,4 +45,29 @@ themeSwitcher.addEventListener('change', e => {
         bodyTag.classList.add(selectedTheme);
     }
     localStorage.setItem('saved-theme', selectedTheme);
+})
+
+let hamburgerMenu = document.querySelector('.hamburger-menu button');
+let mobileMenu = document.querySelector('.mobile-menu');
+hamburgerMenu.addEventListener('click', () => {
+
+    if (mobileMenu.classList.contains('closed')) {
+        mobileMenu.classList.remove('closed');
+        mobileMenu.classList.add('opened');
+        return;
+    }
+
+    if (mobileMenu.classList.contains('opened')) {
+        mobileMenu.classList.remove('opened');
+        mobileMenu.classList.add('closed');
+        return;
+    }
+})
+
+let mobileLinks = document.querySelectorAll('.mobile-link a');
+mobileLinks.forEach( mobileLink => {
+    mobileLink.addEventListener('click', () => {
+        mobileMenu.classList.remove('opened');
+        mobileMenu.classList.add('closed');
+    })
 })
