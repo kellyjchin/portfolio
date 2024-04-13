@@ -206,8 +206,8 @@ margin-top: 20px;
 }
 
 #portrait {
-  width: 500px;
-  height: 500px;
+  width: 30rem;
+  height: 30rem;
   object-position: top;
   object-fit: cover;
 }
