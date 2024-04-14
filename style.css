@@ -274,6 +274,7 @@ margin-top: 20px;
   height: 30rem;
   object-position: top;
   object-fit: cover;
+  border-radius: 50%;
 }
 @media screen and (min-width: 1025px) {
   .hamburger-menu {
