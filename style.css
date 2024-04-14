@@ -88,9 +88,17 @@ body.dark * {
   color: white !important;
 }
 
+body.dark section {
+  border-top: white solid thin;
+}
+
 body.light * {
   background-color: var(--main-white) !important;
   color: #3a3d40 !important;
+}
+
+body.light section {
+  border-top: #3a3d40 solid thin;
 }
 
 body.light .welcome-section{
