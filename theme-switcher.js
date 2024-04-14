@@ -9,12 +9,16 @@ document.addEventListener('DOMContentLoaded', e => {
         bodyTag.classList.add(savedTheme);
     }
 
-    if ( savedTheme === 'dark') {
+    if ( savedTheme === 'webdev' ) {
         themeSwitcher.selectedIndex = 1;
     }
 
-    if ( savedTheme === 'light') {
+    if ( savedTheme === 'dark') {
         themeSwitcher.selectedIndex = 2;
+    }
+
+    if ( savedTheme === 'light') {
+        themeSwitcher.selectedIndex = 3;
     }
 
     if ( !savedTheme ) {

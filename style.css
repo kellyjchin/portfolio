@@ -4,6 +4,9 @@
   --main-green: #6FCA88;
   --main-gold: #A98D2C;
   --main-gray: #254972;
+  --js-yellow: #f7df1e;
+  --css-blue: #264de4;
+  --html-orange: #E44D26;
 }
 
 /* Base reset */
@@ -79,7 +82,7 @@ body {
 }
 
 
-/* THEME SWITCHER TBD */
+/* THEME SWITCHER */
 body.dark * {
   background: #3a3d40 !important;
   color: white !important;
@@ -92,6 +95,28 @@ body.light * {
 
 body.light .welcome-section{
   background-image: unset;
+}
+
+body.webdev .welcome-section,
+body.webdev .contact-section,
+body.webdev .project-title {
+  background-color: var(--css-blue);
+}
+
+body.webdev .projects-section {
+  background-color: var(--html-orange);
+}
+
+body.webdev .nav,
+body.webdev .mobile-menu,
+body.webdev dialog[open],
+body.webdev dialog[open] .close-btn {
+  background-color: var(--js-yellow);
+}
+
+body.webdev .welcome-section .subtitle,
+body.webdev .welcome-section a {
+  color: var(--js-yellow);
 }
 
 h1,
@@ -162,7 +187,6 @@ margin-top: 20px;
 } */
 
 .theme-switcher {
-  width: 100px;
   height: 25px;
   font-family: 'Raleway', sans-serif;
 }
