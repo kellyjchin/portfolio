@@ -216,6 +216,38 @@ margin-top: 20px;
   background: var(--main-gold);
 }
 
+/* Hero */
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero::after {
+  content: ''; /* Necessary for pseudo-elements */
+  position: absolute; /* Position the pseudo-element absolutely within the container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire container */
+  height: 100%; /* Cover the entire container */
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 100%); /* Dark gradient overlay */
+  z-index: 1; /* Ensure the overlay is above the image */
+}
+
+.hero .hero-text h1 {
+  position: absolute;
+  top: 50%;
+  color: white !important;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  background-color: transparent !important;
+}
+
 /* Welcome section */
 
 .welcome-section {
@@ -256,7 +288,6 @@ margin-top: 20px;
 }
 
 @media screen and (max-width: 1024px) {
-
   .desktop-link {
     display: none
   };
