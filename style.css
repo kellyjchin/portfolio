@@ -612,3 +612,7 @@ dialog[open] li {
   list-style-type: disc;
   list-style-position:inside;
 }
+
+dialog * {
+  font-size: 14px;;
+}
