@@ -268,6 +268,8 @@ margin-top: 20px;
   background-color: var(--main-gray);
   column-gap: 10rem;
   padding:0 20px 0;
+  overflow-x: hidden;
+  position: relative;
 }
 
 #portrait {
@@ -616,4 +618,34 @@ dialog[open] li {
 
 dialog * {
   font-size: 14px;;
+}
+
+
+/* animations */
+
+@keyframes slideInLeft {
+  0%   { transform: translateX(-100%); opacity: 0; }
+  20%  { opacity: 0.2; }
+  40%  { opacity: 0.4; }  
+  60%  { opacity: 0.6; }
+  80%  { opacity: 0.8; }         
+  100% { transform: translateX(0); }   
+}
+
+@keyframes slideInRight {
+  0%   { transform: translateX(100%); opacity: 0; }
+  20%  { opacity: 0.2; }
+  40%  { opacity: 0.4; }  
+  60%  { opacity: 0.6; }
+  80%  { opacity: 0.8; }         
+  100% { transform: translateX(0); }   
+}
+
+h1 {
+  animation: slideInLeft 1s;
+}
+
+
+.slidein-right-once {
+  animation: slideInRight 1s ;
 }
