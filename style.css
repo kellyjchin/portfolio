@@ -641,11 +641,11 @@ dialog * {
   100% { transform: translateX(0); }   
 }
 
-/* h1 {
+h1 {
   animation: slideInLeft 1s;
 }
 
 
 .slidein-right-once {
   animation: slideInRight 1s ;
-} */
+}
