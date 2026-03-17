@@ -649,3 +649,32 @@ h1 {
 .slidein-right-once {
   animation: slideInRight 1s ;
 }
+
+
+.bg-wheat {
+  background-color: wheat;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .glider-slide {
+    margin-right: 16px;
+  }
+}
+
+.dots.glider-dots {
+  margin: 16px 0 0;
+}
+
+.glider {
+  scroll-snap-type: x mandatory;
+}
+
+.glider > * {
+  scroll-snap-align: start;
+}
+
+.grid-or-slider {
+  text-align: right;
+}

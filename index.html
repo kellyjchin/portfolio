@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kelly Chin - Portfolio</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 </head>
 <body>
 <link
@@ -85,8 +86,13 @@
 </section>
 
 <section id="projects" class="projects-section">
+  <!-- TODO Enable/Disable Glider -->
+  <!-- <div class="grid-or-slider">
+    <button class="enable-grid">Grid</button>
+    <button class="enable-slider">Slider</button>
+  </div> -->
   <h2 class="projects-section-header">Click a project, learn more!</h2>
-  <div class="projects-grid">
+  <div class="projects-grid glider">
 
     <div class="grid-item">
       <a href="#" class="project project-tile" id="battleship">
@@ -211,7 +217,7 @@
 
     <div class="grid-item">
       <a href="#" class="project project-tile" id="nscc-job-fair">
-        <img loading="lazy" class="project-image" src="pizza2.png" alt="Derpy Pizzas image" style="background-color: wheat;"/>
+        <img loading="lazy" class="project-image bg-wheat" src="pizza2.png" alt="Derpy Pizzas image" />
         <p class="project-title">Derpy Pizzas</p>
         <p class="tooltip">
           A single page application built with full CRUD and authentication functionality! <span class="learn-more">Click to learn more.</span>
@@ -252,6 +258,7 @@
       </dialog>
     </div>
   </div>
+  <div role="tablist" class="dots"></div>
 </section>
 
   <section id="contact" class="contact-section">
@@ -262,9 +269,13 @@
       <a href="mailto:kellyjchin@outlook.com" class="btn contact-details">kellyjchin@outlook.com</a>
     </div>
   </section>
-  <script src="/mobile-menu.js"></script>
-  <script src="/theme-switcher.js"></script>
-  <script src="/dialog.js"></script>
-  <script src="/animationdetector.js"></script>
+  <script defer src="/mobile-menu.js"></script>
+  <script defer src="/theme-switcher.js"></script>
+  <script defer src="/dialog.js"></script>
+  <script defer src="/animationdetector.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <script defer src="/carousel.js">
+
+</script>
 </body>
 </html>
