@@ -678,3 +678,12 @@ h1 {
 .grid-or-slider {
   text-align: right;
 }
+
+.enable-grid, .enable-slider {
+  border: none;
+  cursor: pointer;
+}
+
+.enable-grid {
+  margin-right: 8px;
+}
