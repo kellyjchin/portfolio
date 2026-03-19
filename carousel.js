@@ -1,23 +1,34 @@
 window.addEventListener('load', function () {
 
     let glider = null;
+    let switchToGridBtn = document.querySelector('.enable-grid');
+    let switchToSliderBtn = document.querySelector('.enable-slider');
     // check localStorage for carousel setting
     let savedSliderSetting = localStorage.getItem('slider-setting');
     if(savedSliderSetting === "slider") {
         initGlider(); // to be implemented
+        switchToSliderBtn.classList.add('active');
     }
 
-    let switchToGridBtn = document.querySelector('.enable-grid');
+    if(savedSliderSetting === "grid") {
+        switchToGridBtn.classList.add('active');
+    }
+
+
     switchToGridBtn.addEventListener('click', () => {
         localStorage.setItem('slider-setting', 'grid');
         if (!glider) return;
+        switchToGridBtn.classList.add('active');
+        switchToSliderBtn.classList.remove('active');
         destroyAndResetGlider();
     })
 
-    let switchToSliderBtn = document.querySelector('.enable-slider');
+
     switchToSliderBtn.addEventListener('click', () => {
         localStorage.setItem('slider-setting', 'slider')
         initGlider();
+        switchToGridBtn.classList.remove('active');
+        switchToSliderBtn.classList.add('active');
     })
 
     function destroyAndResetGlider() {

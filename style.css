@@ -682,8 +682,34 @@ h1 {
 .enable-grid, .enable-slider {
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .enable-grid {
   margin-right: 8px;
+}
+
+.enable-grid.active, 
+.enable-slider.active {
+  border: solid thin whitesmoke;
+  padding: 4px;
+  border-radius: 8px; 
+}
+
+.light .enable-grid.active, 
+.light .enable-slider.active {
+  border: solid thin black;
+}
+
+.light .dots.glider-dots button {
+  background-color: whitesmoke !important;
+  border: solid thin black;
+}
+
+.light .dots.glider-dots button.active,
+.dark .dots.glider-dots button.active  {
+  background-color: #a89cc8 !important;
+}
+.dark .dots.glider-dots button {
+  background-color: whitesmoke !important;
 }
