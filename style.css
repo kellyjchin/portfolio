@@ -685,6 +685,7 @@ h1 {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  max-width: 60px;
 }
 
 .enable-grid {
